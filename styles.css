@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+/*   font-family: "Kumbh Sans", sans-serif;  - Weights: 400, 700*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray:  hsl(0, 0%, 59%) ;
+}
+
+body {
+    background: var(--dark-cyan) url(images/bg-pattern-bottom.svg);
+    font-family: "Kumbh Sans", sans-serif; 
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container .content-page {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container .content-page .main-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .content-page .image {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    translate: 0 -60px;
+    
+}
+
+.container .content-page h2 {
+    font-size: 32px;
+    font-weight: 700;
+    translate: 0 -40px;
+    color: var(--dark-cyan);
+}
+
+.container .content-page h2 span {
+    font-size: 20px;
+    color: var(--dark-gray);
+}
+
+.container .content-page .country {
+    translate: 0 -33px;
+    color: var(--dark-gray);
+}
+
+.container .content-page .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .content-page .numbers .paragraphe {
+    color: var(--dark-cyan);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.container .content-page .numbers span{
+    display: inline-block;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 20px;
+}
